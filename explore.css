@@ -1,0 +1,116 @@
+body {
+    width: 100%;
+    background: #fafafa;
+    background-color: #dac7e1;
+    position: relative;
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgb(235, 231, 233);
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-content-wrapper {
+    width: 70%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarItem {
+    height: 100%;
+    cursor: pointer;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.search-results-grid {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.recipe-box {
+    background-color: #ffffff;
+    width: 312px;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+    margin: 20px;
+    text-align: center;
+}
+
+.recipe-box a {
+    position: relative;
+    margin-top: 50%;
+}
+
+.recipe-box img {
+    position: relative;
+    width: 312px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0 0 0;
+    display: block;
+}
+
+#favorites-container {
+    position: fixed;
+    justify-content: center;
+    overflow-y: auto;
+    background: rgb(245, 233, 166);
+    border-radius: 30px;
+    box-shadow: 0px 12px 18px -6px rgb(0 0 0 / 30%);
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    height: 80%;
+    display: none;
+}
+
+#favorites-list {
+    text-align: center;
+}
+
+a {
+    color: #1f03f7;
+}
+
+#favorites-meals {
+    text-decoration: none;
+    color: #de371a;
+    border: 1px solid;
+    padding: 1.5px;
+    background: #ffffff
+}
+
+#favorites-container a {
+    display: block;
+    margin: 15px;
+}
+
+#close-favorites-btn {
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-content-wrapper">
+            <img class="navbarItem" src="logo.png" alt="">
+            <form id="search-form">
+                <input type="search" id="search-box" placeholder="Search for a recipe...">
+                <button type="submit">Search</button>
+            </form>
+            <a id="favorites-meals" href="#">Favorites</a>
+        </div>
+    </nav>
+
+    <section id="search-results-section"></section>
+
+    <div id="favorites-container">
+        <button type="button" id="close-favorites-btn">X</button>
+        <div id="favorites-list">
+        </div>
+    </div>
+
+    <script src="explore.js"></script>
+</body>
+
+</html>
